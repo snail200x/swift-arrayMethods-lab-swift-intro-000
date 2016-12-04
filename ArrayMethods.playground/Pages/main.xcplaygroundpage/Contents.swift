@@ -16,9 +16,11 @@
  */
 // write your code here
 
+var daysOfTheWeek:[String] = ["Monday","Tuesday","Wednesday","Thursday","Firday"]
 
-
-
+for day in daysOfTheWeek {
+    print(day)
+}
 
 
 
@@ -28,7 +30,11 @@
 // write your code here
 
 
+let numDaysOfTheWeek:[String] = ["Monday","Tuesday","Wednesday","Thursday","Firday"]
 
+for (index, day) in numDaysOfTheWeek.enumerated() {
+    print("\(index),\(day)")
+}
 
 
 
@@ -38,7 +44,13 @@
  */
 // write your code here
 
+var emptyArray:[String] = []
 
+if emptyArray.isEmpty {
+    print("This array is empty")
+} else {
+    print("This array is not empty")
+}
 
 
 
@@ -64,7 +76,7 @@
 // write your code here
 
 
-
+print("The size of daysOfTheWeek is \(daysOfTheWeek.count)")
 
 
 
@@ -75,7 +87,13 @@
  */
 // write your code here
 
+daysOfTheWeek.append("Saturday")
+daysOfTheWeek.append("Sunday")
 
+
+for day in daysOfTheWeek {
+    print(day)
+}
 
 
 
@@ -87,8 +105,12 @@
 // write your code here
 
 
+daysOfTheWeek.remove(at: 6)
+daysOfTheWeek.insert("Sunday", at: 0)
 
-
+for day in daysOfTheWeek {
+    print(day)
+}
 
 
 
@@ -98,9 +120,14 @@
  */
 // write your code here
 
+for (index,day) in daysOfTheWeek.enumerated() {
+    daysOfTheWeek[index] = day.uppercased()
+}
 
 
-
+for day in daysOfTheWeek {
+    print(day)
+}
 
 
 
